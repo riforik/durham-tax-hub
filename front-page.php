@@ -22,6 +22,7 @@ get_header();
 			if ( function_exists( 'get_field' ) ) {
 			$featured_slider = get_field( 'featured_slider' );
 		?>
+
 				<div class="slider">
 
 				<?php
@@ -56,3 +57,5 @@ get_header();
 // get_sidebar();
 // get_leafmap();
 get_footer();
+
+// Leaflet.js has been added to front page
