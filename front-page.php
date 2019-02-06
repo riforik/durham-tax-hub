@@ -20,10 +20,9 @@ get_header();
 
 		<?php
 			if ( function_exists( 'get_field' ) ) {
-				$featured_slider = get_field( 'featured_slider' );
-				?>
+			$featured_slider = get_field( 'featured_slider' );
+		?>
 				<div class="slider">
-
 
 				<?php
 				foreach ( $featured_slider as $featured_slide ) {
@@ -36,7 +35,6 @@ get_header();
             <div class="slide" style="background-image: url(<?php echo $image['url'] ?>);">
             <h1><?php echo $header; ?></h1>
             <p><?php echo $content; ?></p>
-            <p><?php echo $image; ?></p>
           </div>
 					<?php
 				}
@@ -48,22 +46,13 @@ get_header();
 		?>
 
 		<?php
-		while ( have_posts() ) :
-			the_post();
-
-			get_template_part( 'template-parts/content', 'page' );
-
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
-
-		endwhile; // End of the loop.
+		get_template_part( 'template-parts/content-mine', 'page' );
 		?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
+// get_sidebar();
+// get_leafmap();
 get_footer();
