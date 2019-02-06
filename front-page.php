@@ -59,3 +59,4 @@ get_header();
 get_footer();
 
 // Leaflet.js has been added to front page
+// working and running smoothly
