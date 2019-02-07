@@ -18,6 +18,24 @@
 			the_title( '<h1 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h1>' );
 		endif;
 	 ?>
+	 <div id="map-section">
+		 <div id="map-list">
+		  <ul>
+		 	 <li>one</li>
+		 	 <li>two</li>
+		 	 <li>three</li>
+		  </ul>
+		 </div>
+		 
+		 <div id="map-box">
+		 	<div id="leafletMap"></div>
+		 </div>
 
-	 <div id="leafletMap"></div>
+		 <div id="map-info">
+		 	<h1>Title</h1>
+			<h2>Address</h2>
+			<h3>more info</h3>
+		 </div>
+	 </div>
+
  </section><!-- .entry-header -->

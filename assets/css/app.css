@@ -13,13 +13,15 @@ body {
   background-repeat: no-repeat;
 }
 
+/* Front-page */
 .entry-header {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: red;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.1);
   padding: 10px;
 }
 
@@ -28,10 +30,52 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-#leafletMap {
+/* Map Container */
+#map-section {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+/* shared style */
+#map-list,
+#leafletMap,
+#map-info {
+  background-color: rgba(25, 134, 142, 0.05);
+  transition: width .4s cubic-bezier(.79, .14, .15, .86);
+}
+
+/* Map Parts */
+/* list of locations */
+#map-list {
+  padding: 10px;
+  margin: 10px;
+}
+
+/* main map */
+#map-box {
+  /* background-image: url(../img/rect-bg.png); */
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+  background-color: rgba(0, 0, 0, 0);
+  margin: 10px;
+  /* padding: 10px; */
   height: 50vh;
   width: 80%;
-  border: 2px solid #27a5b7;
+}
+
+#leafletMap {
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+}
+
+/* main info */
+#map-info {
+  width: 40%;
+  padding: 10px;
+  margin: 10px;
 }
 
 .leaflet-popup-content-wrapper {
@@ -50,4 +94,94 @@ body {
 
 .leaflet-popup-tip {
   background-color: #27a5b7;
+}
+
+@media (min-width:20em) {
+
+  /* smartphones, iPhone, portrait 480x320 phones */
+  /* Map Parts */
+  /* list of locations */
+  #map-list {
+    width: 80%;
+  }
+
+  #map-box {
+    height: 50vh;
+    width: 80%;
+  }
+
+  /* main map */
+  #leafletMap {
+    width: 100%;
+  }
+
+  /* main info */
+  #map-info {
+    width: 80%;
+  }
+}
+
+@media (min-width:30.063em) {
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+}
+
+@media (min-width:40.063em) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+}
+
+@media (min-width:60.063em) {
+
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+  /* Map Parts */
+  /* list of locations */
+  #map-list {
+    width: auto;
+  }
+
+  #map-box {
+    height: 50vh;
+    width: 30%;
+  }
+
+  /* main map */
+  #leafletMap {
+    width: 100%;
+  }
+
+  /* main info */
+  #map-info {
+    width: 40%;
+  }
+}
+
+@media (min-width:64.063em) {
+
+  /* big landscape tablets, laptops, and desktops */
+  /* Map Parts */
+  /* list of locations */
+  #map-list {
+    height: 70vh;
+    width: 20%;
+  }
+
+  #map-box {
+    height: 70vh;
+    width: 40%;
+  }
+
+  /* main map */
+  #leafletMap {
+    height: 100%;
+    width: 100%;
+  }
+
+  /* main info */
+  #map-info {
+    height: 70vh;
+    width: 30%;
+  }
+}
+
+@media (min-width:80.063em) {
+  /* hi-res laptops and desktops */
 }
