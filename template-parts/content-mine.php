@@ -9,8 +9,8 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
+<article id="main-section post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<section class="entry-header">
 		<?php
 		if ( is_singular() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
@@ -20,4 +20,4 @@
 	 ?>
 
 	 <div id="leafletMap"></div>
-	</header><!-- .entry-header -->
+ </section><!-- .entry-header -->

@@ -1,3 +1,7 @@
+body {
+  width: 100vw;
+}
+
 .slider .slide {
   min-height: 600px;
   display: flex !important;
@@ -9,12 +13,41 @@
   background-repeat: no-repeat;
 }
 
+.entry-header {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: red;
+  padding: 10px;
+}
+
 .slider .slide * {
   color: #fff;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
 #leafletMap {
-  height: 380px;
-  width: 70%;
+  height: 50vh;
+  width: 80%;
+  border: 2px solid #27a5b7;
+}
+
+.leaflet-popup-content-wrapper {
+  background-color: #27a5b7;
+  color: white;
+  border-radius: 0;
+  padding: 15px;
+  margin: 0px;
+  /* filter: blur(1px); */
+}
+
+.leaflet-popup-content-wrapper * {
+  padding: 0;
+  margin: 0;
+}
+
+.leaflet-popup-tip {
+  background-color: #27a5b7;
 }

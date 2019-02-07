@@ -22,7 +22,7 @@
     }).addTo(mymap);
 
     L.marker([43.848900, -79.020986]).addTo(mymap)
-      .bindPopup("<b>Hello world!</b><br />I am a popup.").openPopup();
+      .bindPopup(`<div class='mapPopUp'><h1>Hello world!</h1>\nI am a popup.</div>`).openPopup();
 
     L.circle([43.849875, -79.035955], 500, {
       color: 'red',
@@ -30,11 +30,11 @@
       fillOpacity: 0.5
     }).addTo(mymap).bindPopup("I am a circle.");
 
-    L.polygon([
-      [51.509, -0.08],
-      [51.503, -0.06],
-      [51.51, -0.047]
-    ]).addTo(mymap).bindPopup("I am a polygon.");
+    // L.polygon([
+    //   [43.8489, -79.020986],
+    //   [51.503, -0.06],
+    //   [51.51, -0.047]
+    // ]).addTo(mymap).bindPopup("I am a polygon.");
 
 
     var popup = L.popup();
