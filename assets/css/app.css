@@ -87,6 +87,10 @@ body {
   /* filter: blur(1px); */
 }
 
+.leaflet-popup-content {
+  width: 501px !important;
+}
+
 .leaflet-popup-content-wrapper * {
   padding: 0;
   margin: 0;
