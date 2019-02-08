@@ -16,6 +16,7 @@ get_header();
 ?>
 
 	<div id="primary" class="content-area">
+		<!-- Section One/landing pages -->
 		<main id="main" class="site-main">
 
 		<?php
@@ -45,7 +46,7 @@ get_header();
 				// var_dump( $featured_slider );
 			}
 		?>
-
+		<!-- Locations Page -->
 		<?php
 		get_template_part( 'template-parts/content-mine', 'page' );
 		?>
