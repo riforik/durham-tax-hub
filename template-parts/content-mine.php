@@ -20,11 +20,11 @@
 	 ?>
 	 <div id="map-section">
 		 <div id="map-list">
-			 <div class="map-list-option" data-id="001">
+			 <div class="map-list-option" data-id="0" data-name='divFinGrp'>
 				 <h3>Diverse Financial Group</h3>
  				<h4>190 Harwood Avenue South (inside G Centre), Ajax</h4>
 			 </div>
-			 <div class="map-list-option" data-id="002">
+			 <div class="map-list-option" data-id="1" data-name='durhamComLegClin'>
 				 <h3>Durham Community Legal Clinic</h3>
  				<h4>200 John Street West, Unit B1, Oshawa</h4>
 			 </div>
