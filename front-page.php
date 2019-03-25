@@ -16,12 +16,14 @@ get_header();
 ?>
 
 	<div id="primary" class="content-area">
+		<!-- Section One/landing pages -->
 		<main id="main" class="site-main">
 
 		<?php
 			if ( function_exists( 'get_field' ) ) {
 			$featured_slider = get_field( 'featured_slider' );
 		?>
+
 				<div class="slider">
 
 				<?php
@@ -44,7 +46,7 @@ get_header();
 				// var_dump( $featured_slider );
 			}
 		?>
-
+		<!-- Locations Page -->
 		<?php
 		get_template_part( 'template-parts/content-mine', 'page' );
 		?>
@@ -56,3 +58,6 @@ get_header();
 // get_sidebar();
 // get_leafmap();
 get_footer();
+
+// Leaflet.js has been added to front page
+// working and running smoothly
